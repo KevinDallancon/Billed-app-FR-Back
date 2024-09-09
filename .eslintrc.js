@@ -4,13 +4,17 @@ module.exports = {
     commonjs: true,
     es2021: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  // extends: ["airbnb-base"],
   parserOptions: {
     ecmaVersion: 13,
+    sourceType: "module",
   },
-  rules: {
-  },
-  ignorePatterns: ['tests', 'setupTests.js', '*.test.js', 'migrations', 'models'],
+  rules: {},
+  ignorePatterns: [
+    "tests",
+    "setupTests.js",
+    "*.test.js",
+    "migrations",
+    "models",
+  ],
 };
